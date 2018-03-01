@@ -56,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
         helpFragment = new HelpFragment();
         bookmarksFragment = new BookmarksFragment();
 
-        ProgressBar progressInfoBar = findViewById(R.id.main_info_progress);
-
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(helpFragment, "Help");
         viewPagerAdapter.addFragment(dashboardFragment, "Dashboard");
